@@ -5,7 +5,7 @@ define(function (require) {
     return Backbone.Router.extend({
 
         ext: require('ext'),
-        views: require('components'),
+        views: require('views'),
         currentView: null,
         rootNode: $(document.body).find('#content').get(0),
 

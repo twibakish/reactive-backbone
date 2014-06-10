@@ -5,9 +5,11 @@ body {
 }
 
 body {
-    background-color: #FFFFFF;
+    background-color: #78D5E3;
+    color: #fff;
     text-align: center;
     text-transform: uppercase;
+    overflow-y: scroll;
 }
 
 h1, h2, h3, h4, h5, span, p {
@@ -16,8 +18,16 @@ h1, h2, h3, h4, h5, span, p {
 }
 
 div {
-    display: block;
     position: relative;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+img {
+    display: block;
+    margin: auto;
 }
 
 input, textarea, button {
@@ -36,16 +46,74 @@ ul li {
 }
 
 div#content {
-    height: 100%;
+    margin: 0 20px;
 }
 
-/**
- * Login box
- */
+div.block {
+    background-color: #fff;
+    color: #555;
+    margin: 15px 0;
+}
 
-div.loginBox {
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    top: 40%;
+div#filterable-places-box {
+    min-width: 1024px;
+    width: 90%;
+
+    margin-top: 40px;
+}
+
+div#search-input {
+    margin-bottom: 50px;
+}
+
+div#advanced-searched-box {
+
+}
+
+div#list-tools {
+}
+
+div#list-tools-pager,
+div#list-tools-counter {
+    width: 50%;
+}
+
+div#list-tools-pager {
+    float: right;
+}
+
+div#list-tools-counter {
+    float: left;
+}
+
+div#place-rows {
+    text-align: left;
+}
+
+div.place-row.block {
+    height: 250px;
+}
+
+div.place-row-image {
+    float: left;
+    width: 15%;
+    height: inherit;
+}
+
+div.place-row-image img {
+    max-width: 100%;
+}
+
+div.place-row-data {
+    float: right;
+    width: 85%;
+}
+
+div.place-row-data-name,
+div.place-row-data-details {
+    padding: 20px 10px;
+}
+
+div.place-row-data-name {
+    background-color: #eee;
 }
